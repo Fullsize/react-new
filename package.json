@@ -21,7 +21,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-loadable": "^5.5.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.1.1"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -33,6 +37,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-loadable": "^5.5.3",
     "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.0",
     "@types/webpack": "^4.41.17",
     "@types/webpack-dev-server": "^3.11.0",
     "@types/webpack-merge": "^4.1.5",

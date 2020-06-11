@@ -1,11 +1,16 @@
 import React from 'react';
-import './index.css';
-class Home extends React.Component{
-	render(){
-		return(
-			<div className="title">
+import styled from 'styled-components';
+const Title = styled.h1`
+	color:white;
+	font-size:20px;
+	background-color:red;
+`;
+class Home extends React.Component {
+	render() {
+		return (
+			<Title>
 				hello world
-			</div>
+			</Title>
 		)
 	}
 }
