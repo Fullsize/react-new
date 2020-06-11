@@ -3,8 +3,8 @@ import './index.css';
 class Home extends React.Component{
 	render(){
 		return(
-			<div>
-				<h1 className="title">hello world</h1>
+			<div className="title">
+				hello world
 			</div>
 		)
 	}
