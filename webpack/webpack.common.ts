@@ -20,19 +20,7 @@ export default {
 			exclude: /node_modules/,
 		}, {
 			test: /\.(css)$/,
-			loader: ['style-loader','css-loader'
-				// {
-				// 	loader: 'css-loader',
-				// 	options: {
-				// 		modules: {
-				// 			localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
-				// 		},
-				// 		importLoaders: 1,
-				// 		import: true,
-				// 		sourceMap: true
-				// 	}
-				// }
-			]
+			loader: ['style-loader','css-loader']
 		}]
 	},
 	plugins: [
