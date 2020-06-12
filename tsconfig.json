@@ -13,5 +13,6 @@
 				"src*"
 			]
 		},
-	}
+	},
+	"files": ["./types/images.d.ts"]
 }

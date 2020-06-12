@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import {CleanWebpackPlugin} from 'clean-webpack-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 const styleLoader = process.env.NODE_ENV === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader
 export default {
@@ -23,6 +23,21 @@ export default {
 		}, {
 			test: /\.(css)$/,
 			loader: [styleLoader, 'css-loader']
+		},
+		{
+			test: /\.(png|jpg|gif|jpeg)$/i,
+			use: [
+				{
+					loader: 'url-loader',
+					options: {
+						limit: 8192,
+					},
+				},
+			],
+		},
+		{
+			test: /\.svg$/,
+			use: ['@svgr/webpack', 'url-loader'],
 		}]
 	},
 	plugins: [
