@@ -3,6 +3,7 @@ import routers from '@/route';
 import { Route, Switch } from 'react-router-dom';
 import AsyncComponent from '@/components/AsyncComponent';
 import 'normalize.css';
+import 'antd/dist/antd.css';
 class App extends Component {
 	render() {
 		return (
