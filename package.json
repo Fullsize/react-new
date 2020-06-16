@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": " NODE_ENV=development webpack-dev-server --mode=development --config ./webpack/webpack.dev.ts",
-    "build": "NODE_ENV=production webpack -p --mode=production --config ./webpack/webpack.prod.ts"
+    "build": "NODE_ENV=production webpack -p --mode=production --config ./webpack/webpack.prod.ts",
+    "test": "111"
   },
   "husky": {
     "hooks": {
