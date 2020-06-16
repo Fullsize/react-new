@@ -22,7 +22,7 @@ export default {
 			exclude: /node_modules/,
 		}, {
 			test: /\.(css)$/,
-			loader: [styleLoader, 'css-loader']
+			loader: [styleLoader, "css-loader"]
 		},
 		{
 			test: /\.(png|jpg|gif|jpeg)$/i,
