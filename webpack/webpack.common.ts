@@ -17,7 +17,7 @@ export default {
 	},
 	module: {
 		rules: [{
-			test: /\.(tsx|jsx)$/,
+			test: /\.(tsx|jsx|ts)$/,
 			loader: ['babel-loader', 'ts-loader'],
 			exclude: /node_modules/,
 		}, {

@@ -6,13 +6,12 @@
   "scripts": {
     "start": " NODE_ENV=development webpack-dev-server --mode=development --config ./webpack/webpack.dev.ts",
     "build": "NODE_ENV=production webpack -p --mode=production --config ./webpack/webpack.prod.ts",
-    "test": "111"
+    "test": ""
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm test",
-      "pre-push": "npm test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-push": "npm test"
     }
   },
   "repository": {
@@ -27,6 +26,8 @@
   "homepage": "https://github.com/Fullsize/react-new#readme",
   "dependencies": {
     "antd": "^4.3.4",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
