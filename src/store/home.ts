@@ -1,5 +1,8 @@
-import {observable } from "mobx";
+import {observable,action,runInAction } from "mobx";
 class HomeStore {
+	constructor(stores?:any){
+
+	}
 	@observable init:number=1;
 }
 

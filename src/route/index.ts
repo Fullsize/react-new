@@ -1,6 +1,7 @@
 export default [
 	{
 		path: "/",
-		page:'home'
+		page:'home',
+		showFooter:true,
 	},
 ]

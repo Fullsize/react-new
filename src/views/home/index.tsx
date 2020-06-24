@@ -1,7 +1,7 @@
 import React from 'react';
-import {inject,observer} from 'mobx-react';
+import { inject} from 'mobx-react';
 import styled from 'styled-components';
-import {Button} from 'antd';
+import { Button } from 'antd';
 import Natural from '@/img/jpg/natural.jpg';
 const Title = styled.h1`
 	color:white;
@@ -9,29 +9,23 @@ const Title = styled.h1`
 	background-color:red;
 	padding:0;
 	margin:0;
+	text-align:center;
 `;
 const Img = styled.img`
 width:50%;
 `;
-interface Props{
-	init:number;
+interface Props {
+	init: number;
 }
-@inject((stores:any)=>({
-	init:stores.HomeStore.init
-}))
-@observer
-class Home extends React.Component<Props>{
-	render() {
-		return (
-			<>
-				<Title>
-					hello world
-				</Title>
-				<Img src={Natural} alt="" />
-				<Button>123</Button>
-				{this.props.init}
-			</>
-		)
-	}
+function Home(props: Props) {
+	return (
+		<>
+			<Title>hello,world</Title>
+			<Img src={Natural} />
+			{props.init}
+		</>
+	)
 }
-export default Home;
+export default inject((stores: any) => ({
+	init: stores.HomeStore.init
+}))(Home)
